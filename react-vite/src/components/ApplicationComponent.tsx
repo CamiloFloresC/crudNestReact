@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { IApplication } from "../interfaces/Application";
-import { dateFormat } from "../utils/dateFromat";
+import { dateFormat } from "../utils/dateFormat";
 import { FormApp } from "./FormApp";
 import BasicModal from "./ModalApp";
 
