@@ -10,7 +10,7 @@ export const ApplicationComponent = ({
   application: IApplication;
 }) => {
   return (
-    <article className="w-full max-w-2xl h-full flex flex-col border-black border-2 rounded-md p-4 gap-3">
+    <article className="w-full max-w-sm h-full flex flex-col border-black border-2 rounded-md p-4 gap-3">
       <h2 className="font-bold">{application.name}</h2>
       <span className="font-light">{dateFormat(application.createdAt)}</span>
       <span>

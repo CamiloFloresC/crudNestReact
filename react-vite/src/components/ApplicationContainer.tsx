@@ -24,7 +24,7 @@ export const ApplicationContainer = () => {
           color={"success"}
         />
       </article>
-      <section className="grid grid-cols-2 justify-items-center w-full h-full justify-center gap-4 my-4">
+      <section className="flex flex-col sm:flex-row sm:flex-wrap w-full h-full justify-start sm:justify-center justify-items-center items-center gap-4 my-4">
         {data?.map((app: IApplication) => {
           return <ApplicationComponent key={app.id} application={app} />;
         })}

@@ -23,7 +23,7 @@ export const GroupContainer = () => {
           color={"success"}
         />
       </article>
-      <section className="grid grid-cols-2 justify-items-center w-full h-full justify-center gap-4 mt-4 my-4">
+      <section className="flex flex-col sm:flex-row sm:flex-wrap w-full h-full justify-start sm:justify-center justify-items-center items-center gap-4 my-4">
         {data?.map((group: IGroup) => {
           return <GroupComponent key={group.id} group={group} />;
         })}
