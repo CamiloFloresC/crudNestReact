@@ -4,7 +4,11 @@ import { dateFormat } from "../utils/dateFromat";
 import { FormApp } from "./FormApp";
 import BasicModal from "./ModalApp";
 
-export const Application = ({ application }: { application: IApplication }) => {
+export const ApplicationComponent = ({
+  application,
+}: {
+  application: IApplication;
+}) => {
   return (
     <article className="w-full max-w-2xl h-full flex flex-col border-black border-2 rounded-md p-4 gap-3">
       <h2 className="font-bold">{application.name}</h2>

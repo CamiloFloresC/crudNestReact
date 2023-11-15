@@ -2,11 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import { SubTitle } from "../components/SubTitle";
 import { getGroups } from "../services/Group";
 import { IGroup } from "../interfaces/Group";
-import { GroupComponent } from "../components/Group";
+import { GroupComponent } from "../components/GroupComponent";
 import { FormGroup } from "../components/FormGroup";
 import BasicModal from "../components/ModalApp";
-
-export const Group = () => {
+export const GroupContainer = () => {
   const { data, isLoading } = useQuery({
     queryFn: getGroups,
     queryKey: ["groups"],

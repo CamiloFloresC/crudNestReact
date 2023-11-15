@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { Home } from "../pages/Home";
 import { Applications } from "../pages/Applications";
-import { Group } from "../pages/group";
+import { Group } from "../pages/Groups";
 
 export const router = createBrowserRouter([
   {
