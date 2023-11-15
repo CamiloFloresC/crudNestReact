@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { IApplication } from "../interfaces/Application";
 import { dateFormat } from "../utils/dateFormat";
-import { FormApp } from "./FormApp";
 import BasicModal from "./ModalApp";
+import { FormAppUpdate } from "./forms/FormAppUpdate";
 
 export const ApplicationComponent = ({
   application,
@@ -23,7 +23,7 @@ export const ApplicationComponent = ({
       </article>
       <article className="flex gap-2">
         <BasicModal
-          component={<FormApp text="Update Application" />}
+          component={<FormAppUpdate />}
           text="Update Application"
           color={"primary"}
         />

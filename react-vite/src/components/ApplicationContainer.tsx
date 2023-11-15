@@ -3,7 +3,7 @@ import { getApplications } from "../services/Appications";
 import { IApplication } from "../interfaces/Application";
 import { ApplicationComponent } from "../components/ApplicationComponent";
 import { SubTitle } from "../components/SubTitle";
-import { FormApp } from "../components/FormApp";
+import { FormAppCreate } from "./forms/FormAppCreate";
 import BasicModal from "../components/ModalApp";
 
 export const ApplicationContainer = () => {
@@ -19,7 +19,7 @@ export const ApplicationContainer = () => {
       <article className="flex gap-2 p-2 justify-between items-center">
         <SubTitle subtitle="your applications" />
         <BasicModal
-          component={<FormApp text="Create Application" />}
+          component={<FormAppCreate />}
           text="Create Application"
           color={"success"}
         />

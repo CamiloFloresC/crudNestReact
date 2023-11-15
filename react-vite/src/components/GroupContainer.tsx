@@ -3,7 +3,7 @@ import { SubTitle } from "../components/SubTitle";
 import { getGroups } from "../services/Group";
 import { IGroup } from "../interfaces/Group";
 import { GroupComponent } from "../components/GroupComponent";
-import { FormGroup } from "../components/FormGroup";
+import { FormGroupCreate } from "./forms/FormGroupCreate";
 import BasicModal from "../components/ModalApp";
 export const GroupContainer = () => {
   const { data, isLoading } = useQuery({
@@ -18,7 +18,7 @@ export const GroupContainer = () => {
       <article className="flex gap-2 p-2 justify-between items-center">
         <SubTitle subtitle="your groups" />
         <BasicModal
-          component={<FormGroup text="Create Group" />}
+          component={<FormGroupCreate />}
           text="Create Group"
           color={"success"}
         />

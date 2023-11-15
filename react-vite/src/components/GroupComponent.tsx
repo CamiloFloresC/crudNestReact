@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { IApplication } from "../interfaces/Application";
 import { IGroup } from "../interfaces/Group";
-import { FormGroup } from "./FormGroup";
 import BasicModal from "./ModalApp";
+import { FormGroupUpdate } from "./forms/FormGroupUpdate";
 
 export const GroupComponent = ({ group }: { group: IGroup }) => {
   return (
@@ -26,7 +26,7 @@ export const GroupComponent = ({ group }: { group: IGroup }) => {
       </section>
       <article className="flex gap-2">
         <BasicModal
-          component={<FormGroup text="Update Group" />}
+          component={<FormGroupUpdate />}
           text="Update Group"
           color={"primary"}
         />
